@@ -23,7 +23,7 @@ Solutions
 - design patterns
 - mv* 
 	- model -> core
-	- view -> display
+	- view/template -> display and logic for display
 	- other (controller, view/controller) -> managing flow
 	- routes -> mapping destinations
 
@@ -38,4 +38,7 @@ Ideas in mv* that stick
 - persisting to a data store
 - addressable state and actions
 - linear architecture for state transitions
-
+- routes should be light, used as a feature, not as the focus
+- routes should address state, not transitions of state
+- events as part of the architecture
+- build small, molecular components
