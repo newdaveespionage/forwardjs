@@ -1,6 +1,8 @@
 Enemy of the State
 ==================
-
+@ammeep
+amy.palamounta.in
+github.com/ammeep
 - are we managing state in a scalable fashion
 - can we do it with clarity in code
 
@@ -42,3 +44,19 @@ Ideas in mv* that stick
 - routes should address state, not transitions of state
 - events as part of the architecture
 - build small, molecular components
+	- modules
+- modules never place themselves in the application 
+- layout composition controls layout
+	- defines a shell
+	- marionette js?
+- dispatcher
+	- listens for new module calls
+	- hands new modules to layout manager
+
+Result
+------
+- event driven, composable application
+
+- use as a basis, but not absolute
+- don't built servers on the client
+
