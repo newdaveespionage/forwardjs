@@ -150,3 +150,12 @@ Web Components
 		- create a template
 		- using element.createShadowRoot();
 		- the layout of your component, separate from content
+		- livecoding
+		```
+		RAN OUT OF TIME
+		```
+		- great for managing scope
+- new features that enhance dev productivity
+- year or two out from modern browser support
+- libraries and frameworks will help drive adoption prior to native adoption
+- YAY!
