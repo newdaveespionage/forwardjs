@@ -30,6 +30,41 @@ Lessons
 	- use specific version
 	- build strategy to update
 	- do not rely on devs using semver
-- 
+- Stateless applications
+	- allows for easy scaling
+- If you do have to use state
+	- Redis
+	- session storage
+- API building
+	- use express
+		- great for building apis
+		- unopinionated
+		- minimalistic
+		- production ready
+	- possibly happy
+		- newer
+		- production ready
+		- logging validations
+	- restify
+		- straightforward
+		- quick
+		- easy
+- Horizontal scalability is imperitive for production ready
+	- run node app multiple times
+	- balance traffic accross apps
+- Don't reinvent everything
+	- don't start from scratch
+	- use npm
+	- there is probably a package for what you do
+	- research it
+	- check support / roadmap
+- Testing
+	- DO IT
+- Streams
+	- Learn how streams work
+
+
+
+
 
 
