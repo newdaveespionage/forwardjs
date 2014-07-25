@@ -1,5 +1,6 @@
 Functional Programming With Generators
 ======================================
+@cultofmetatron
 
 Requirements
 ------------
@@ -39,4 +40,16 @@ functional programming
 - can merge two gens?
 - koa style flow control?
 - generators can make generators
+- context = call with this applied can be anything depending on call time. 
+- koajs.com
+
+* note to self: code examples should be step-by-step, clear as hell, these are not*
+* also, needs real-world context *
+
+- github.com/cultofmetatron/shen -- toolbox for building generators
+	- can create cascades of function groups depending on desired flow
+	- DEAR GOD MAKE THE CODE MORE READABLE. 
+
+- biggest mistake from old paradigm:
+	- yielding parallel values when yield is a sequential basis. 
 
