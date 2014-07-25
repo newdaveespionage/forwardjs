@@ -40,7 +40,7 @@ Challenges and solutions
 - Guessing Game solutions:
 	- be aware of tone and manner during review
 	- "I'm confused about what that means, where should we start?"
-
+	
 
 Philosophy
 ----------
