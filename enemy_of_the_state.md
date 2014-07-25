@@ -61,3 +61,9 @@ Result
 - don't built servers on the client
 - use event mediation to decouple communication between modules
 - define events carefully, don't just flag everything as an event
+- chaplin -> worth looking into
+- when does one break into modules -> no easy answer, depends on when
+
+when to not mix routes and transitions
+- delete
+	- don't use a route to address a delete, use a transitional connection
