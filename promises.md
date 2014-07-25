@@ -2,6 +2,7 @@ promises
 ========
 
 http://github.com/bengl/forwardjs-promise-talk
+terminal font - Perfect DOS VGA 437
 
 - has reject function
 - has fulfill function
@@ -139,6 +140,7 @@ testing
 - using mocha < 1.18.0
 	- have to call done at end of callback
 - newer mocha, can return promise
+- 
 
 worth it?
 ---------
