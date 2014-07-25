@@ -19,10 +19,13 @@ Web Components
 		- Standard way of creating your own html tags
 		- Done today using jQuery plugins, polyfills, etc. 
 		- simplify to actual custom tag
+
 		```
 		<mycustomtag></mycustomtag>
 		```
+		
 		- create using 
+		
 		```
 		var MyElement = Object.create(HTMLElement.prototype);
 
@@ -33,8 +36,10 @@ Web Components
 		// attributechangedCallback
 		// document.registerElement
 		```
+
 		- ES6 will have cleaner API (encapsulated in build)
-		- livecoding inline in an html5 document
+		- livecoding inline in an html5 document, ES5 style
+
 		```
 		<my-component></my-component>
 		<script>
@@ -54,10 +59,55 @@ Web Components
 			var MyComponent = document.registerElement('my-component', {prototype:MyComponentPrototype});
 
 			debugger;
-			
+
+			document.body.appendChild(myComponent);
+
+			debugger;
+
+			myComponent.setAttribute('foo','bar');
+
+			debugger
+
+			document.body.removeChild(myComponent);
 
 		</script>
 		```
 
+		- Today's solutions
+			- jQuery plugin (simplest)
+			- Ember components (leveraging framework/handlebars helpers)
+			- Ember components (future) = allowing actual tags that retroactively define
+			- Angular 1.x: directives
+			- Angular 2.0: components - web component full support 
+			- Polymer - leverages spec using declarative formmat
+		- enabling interop
+			- under exploration (open for collaboration)
+			- no current spec for data passing
+			- Node.bind is a promising proposal
+		- native browser support
+			- custom elements in chrome
+			- firefox in development
+			- polyfill using platform.js (Google Polymer team, evergreen browser support)
+	- Templates
+		- mechanism for declaring fragments for cloning and inserting
+		- are inert: 
+			- img src's do not load until cloned
+			- script tags do not execute until cloned 
+			- rendering triggers do not occur unless cloned
+		- livecoding 
+		``` 
+		<template id="my-template">
+			hello world
+			<img src="success.jpg" />
+		</template>
+
+		<script>
+			var template = document.getElementById('my-template');
+			var clone = template.content.cloneNode(true);
+			document.body.appendChild(template);
+		</script>
+		```
+		- today's equivalents
+			- ember with custom typed script tag
 
 
