@@ -60,8 +60,19 @@ Lessons
 	- check support / roadmap
 - Testing
 	- DO IT
+	- Jasmine (BDD)
 - Streams
 	- Learn how streams work
+	- Streamadventure
+- Keep it simple
+	- Easier to fix
+	- Easier to document/maintain
+- Load testing
+	- Apache AB
+	- Standard suites work for normal http carls
+	- Websockets are hard to test
+- CSRF Tokens
+	- Frameworks have solutions for this
 
 
 
