@@ -1,5 +1,6 @@
 Literary Art on teh Web
 =======================
+@supergsp
 
 Why
 ---
@@ -76,5 +77,9 @@ Process
 - Gather data
 - Test data / fail / repeat / revise
 - Make it work, show others
+
+Interactive Data Visualization
+d3.js in action
+irene ros
 
 
