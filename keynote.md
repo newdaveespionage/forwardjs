@@ -1,0 +1,17 @@
+- We've become too enamored with our own apps
+- Stop building apps for everything
+- Too many unclear layers on top of building static pages
+- Build for the user
+- Build for real use cases
+- Solve actual problems before making pretty interfaces
+- Progressive enhancement, Graceful degredation is double the work
+- Build for offline first
+- AppCache - everyone complains, no one uses
+- Service worker: a tech that needs help improving
+- Web components
+	- Render with the browser
+	- Less power use
+	- Richer interfaces
+	- Real application interfaces in web 
+	- Custom elements are potential hazard if used in the hammer methodology
+	- Useful for modular design
