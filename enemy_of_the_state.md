@@ -59,4 +59,5 @@ Result
 
 - use as a basis, but not absolute
 - don't built servers on the client
-
+- use event mediation to decouple communication between modules
+- define events carefully, don't just flag everything as an event
