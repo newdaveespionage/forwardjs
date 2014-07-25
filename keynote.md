@@ -6,6 +6,7 @@ Issues
 - We've become too enamored with our own apps
 - Stop building apps for everything
 - Too many unclear layers on top of building static pages
+- Assuming platform (EVERYONE USES MACS RIGHT, RIGHT?)
 
 Philosophy changes(?)
 ---------------------
