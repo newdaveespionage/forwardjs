@@ -94,6 +94,7 @@ Web Components
 			- img src's do not load until cloned
 			- script tags do not execute until cloned 
 			- rendering triggers do not occur unless cloned
+		- low level primitive (better than using procedural javascript to move dom around)
 		- livecoding 
 		``` 
 		<template id="my-template">
@@ -103,11 +104,49 @@ Web Components
 
 		<script>
 			var template = document.getElementById('my-template');
+			// clone recursively
 			var clone = template.content.cloneNode(true);
 			document.body.appendChild(template);
 		</script>
 		```
 		- today's equivalents
 			- ember with custom typed script tag
+		- wouldn't be nice if we could do data binding?
+			- libs and frameworks will have to fill the void
+	- Imports
+		- include and reuse HTML documents in other HTML documents
+		- shared dependencies are only loaded once
+		- several open questions regarding production use
+		- quick way to build component libraries
+		- livecoding
+		my-button.html
+		```
+		<script>
+			(function(document){
+				var MyComponentPrototype = Object.create(HTMLElement.prototype);
+				MyComponentPrototype.attachedCallback = function() {
+					this.innerHTML='this is an attached component';
+				}
+				var MyComponent = document.registerElement('imported-element', {prototype:MyComponentPrototype});
 
-
+			})(document.currentScript.ownerDocument);
+		</script>
+		```
+		index.html
+		``` 
+		<head>
+			<link rel="import" href="my-button.html"/>
+		</head>
+		<body>
+			<imported-element></imported-element> <!-- imported from my-button.html -->
+		</body>
+		```
+	- Shadow DOM
+		- provides DOM encapsulation
+		- allows you to package styles/js/etc. into one place
+		- leverage dom apis
+		- no declarative api
+		- Polymer exposes a declarative api
+		- create a template
+		- using element.createShadowRoot();
+		- the layout of your component, separate from content
