@@ -81,3 +81,18 @@ Future
 	- chat app is better overview/hands-on
 - Create boilerplate code for init
 - Needed Utils/Routers (Open Source), router needs to create action to fit into architecture
+
+Questions
+---------
+- init
+	- initial payload sent from server 
+	- store doesn't just take payload, stores route to dispatcher so all stores and elements can view (read path vs write path)
+	- web api utilities file for stores to call 
+	- utility method is typically called in the action creator vs. in the stores
+- How to enforce style
+	- culture communication
+- Dispatcher manages EVERYTHING
+- action creators emit events that React manages
+- error exists if circular dependency occurs between store updates (waitFor)
+- waitfor is not global, it's per message type
+- 
